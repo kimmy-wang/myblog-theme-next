@@ -338,9 +338,9 @@
     {### END POST BODY ###}
     {#####################}
 
-    {% if theme.passage_end_tag.enabled and not is_index %}
+    {% if not is_index %}
       <div>
-        {% include 'passage-end-tag.swig' %}
+        {% include 'post-end-tag.swig' %}
       </div>
     {% endif %}
 

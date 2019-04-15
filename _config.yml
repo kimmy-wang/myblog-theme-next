@@ -1224,7 +1224,7 @@ github:
   # For line: black, blue, green, red, white,
   color: blue
 
-passage_end_tag:
+post_end_tag:
   enabled: true
   message: ----------本&nbsp;文&nbsp;结&nbsp;束&nbsp;<i class="fa fa-paw"></i>&nbsp;感&nbsp;谢&nbsp;您&nbsp;的&nbsp;阅&nbsp;读----------
 
