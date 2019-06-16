@@ -280,6 +280,25 @@
         </div>
       {% endif %}
 
+      {# Video support #}
+      {% if post.videos and post.videos.length %}
+        <div class="post-video" itemscope itemtype="http://schema.org/ImageGallery">
+          {% set COLUMN_NUMBER = 3 %}
+          {% for video in post.videos %}
+            {% if loop.index0 % COLUMN_NUMBER === 0 %}<div class="post-video-row">{% endif %}
+            <a class="post-video-img fancybox" data-fancybox="video" href="{{ url_for(video.video) }}"
+               itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
+              <i class="post-video-icon fa fa-play-circle-o fa-2x"></i>
+              <img src="{{ url_for(video.cover) }}" itemprop="contentUrl"/>
+            </a>
+            {% if loop.index0 % COLUMN_NUMBER === 2 %}</div>{% endif %}
+          {% endfor %}
+
+          {# Append end tag for `post-video-row` when (photos size mod COLUMN_NUMBER) is less than COLUMN_NUMBER #}
+          {% if post.videos.length % COLUMN_NUMBER > 0 %}</div>{% endif %}
+        </div>
+      {% endif %}
+
       {% if is_index %}
         {% if post.description and theme.excerpt_description %}
           {{ post.description }}
