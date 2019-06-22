@@ -164,6 +164,8 @@ menu:
   archives: /archives/ || archive
   music: /musics/ || music
   doc: /docs/ || file-text
+  lovestory: /lovestory/ || heart
+  love: /love/ || heartbeat
 #  photo: /photos/ || photo
 #  video: /videos/ || film
   #schedule: /schedule/ || calendar
@@ -223,8 +225,8 @@ social_icons:
 # Blog rolls
 links_icon: link
 links_title: Links
-links_layout: block
-#links_layout: inline
+#links_layout: block
+links_layout: inline
 links:
   Cwamp: https://cwamp.cn
   See: https://see.team
