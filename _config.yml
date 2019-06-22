@@ -164,6 +164,7 @@ menu:
   archives: /archives/ || archive
   music: /musics/ || music
   doc: /docs/ || file-text
+  tetris: /tetris/ || gamepad
   lovestory: /lovestory/ || heart
   love: /love/ || heartbeat
 #  photo: /photos/ || photo
