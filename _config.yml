@@ -203,17 +203,15 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-#  Cwamp: https://github.com/cwamp || github
-#  See: https://github.com/see || github
-#  Gitter: https://github.com/gitter-team || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/upcwangying || github
+  E-Mail: mailto:me@upcwangying.com || envelope
+  StackOverflow: https://stackoverflow.com/users/9684523 || stack-overflow
   #Weibo: https://weibo.com/yourname || weibo
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
-  #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
   #YouTube: https://youtube.com/yourname || youtube
   #Instagram: https://instagram.com/yourname || instagram
   #Skype: skype:yourname?call|chat || skype
@@ -231,7 +229,7 @@ links_layout: block
 links:
   Cwamp: https://cwamp.cn
   See: https://see.team
-  Gitter: https://gitter.team
+  Gitter: https://gitterapp.com
 
 # Sidebar Avatar
 avatar:
